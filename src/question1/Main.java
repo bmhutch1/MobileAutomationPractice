@@ -1,9 +1,15 @@
 package question1;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args){
-		System.out.println(reverseEverything("hope you are doing well"));
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a string to reverse:");
+		String str = scanner.nextLine();
+		scanner.close();
+		System.out.println("Reversed String: " + reverseEverything(str));
 	}
 	
 	/**

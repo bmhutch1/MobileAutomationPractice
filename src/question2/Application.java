@@ -3,11 +3,21 @@ package question2;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+/**
+ * Creates the WebDriver object and initializes the pages 
+ * 
+ * @author Brandon Hutchinson
+ */
 public class Application {
 
-	WebDriver driver;
-	MainPage mainPage;
+	private WebDriver driver;
+	private MainPage mainPage;
 	
+	/**
+	 * Constructor for Application, creates a WebDriver instance and navigates to the URL passed in
+	 * 
+	 * @param url
+	 */
 	public Application(String url){
 		
 		String os = System.getProperty("os.name").toLowerCase();

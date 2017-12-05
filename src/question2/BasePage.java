@@ -10,6 +10,14 @@ import org.openqa.selenium.WebElement;
 public abstract class BasePage {
 	protected WebDriver driver;
 	
+	/**
+	 * Creates a map from a list of key web elements and a list of value web elements
+	 * 
+	 * @param keyElements
+	 * @param valueElements
+	 * @return
+	 * @throws Exception
+	 */
 	protected Map<String, String> createMap(List<WebElement> keyElements, List<WebElement> valueElements) throws Exception{
 		Map<String, String> map = new HashMap<String,String>();
 		if(keyElements.size() != valueElements.size()){
